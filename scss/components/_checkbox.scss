@@ -1,0 +1,44 @@
+.checkbox {
+  &__input {
+    appearance: none;
+
+    &:checked + .checkbox__icon {
+      fill: var(--color-text-light);
+      background-color: var(--color-brand);
+      border-color: transparent;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--color-secondary);
+    margin-top: 20px;
+
+    @include for-desktop {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+
+  &__agreement {
+    margin-left: 4px;
+    color: var(--color-brand);
+    text-underline-position: under;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    fill: var(--color-text-light);
+    border: 2px solid var(--color-logo);
+    border-radius: 2px;
+    transition: fill var(--time-trasform) var(--timing-function),
+      background-color var(--time-trasform) var(--timing-function),
+      border var(--time-trasform) var(--timing-function);
+  }
+}

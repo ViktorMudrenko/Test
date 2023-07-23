@@ -1,0 +1,26 @@
+.pants {
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item{
+    max-width: 50%;
+    border: 1px white solid;
+  }
+
+  &__link{
+    color: black;
+    font-size: 24px;
+  }
+
+  // &__img{
+
+  // }
+
+  &__text{
+    text-align: center;
+    margin: 20px;
+  }
+}

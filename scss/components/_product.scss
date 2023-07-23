@@ -1,0 +1,112 @@
+.product {
+  display: flex;
+
+  &__foto{
+    width: 65%;
+  }
+
+  &__info{
+    width: 25%;
+    margin: 0  auto;
+  }
+
+  &__card{
+    position: sticky;
+    transform: translate(0, -50%);
+    top: 50%;
+  }
+
+  &__name{
+    font-weight: lighter;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  &__price{
+    margin-bottom: 40px;
+  }
+
+  &__color-list{
+  display: flex;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 0.5px black solid;
+  }
+
+  &__color{
+    border: 1px rgb(184, 184, 184) solid;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 250px;
+  }
+
+  &__color-palazzogray{
+    background-color: rgb(187 187 187);
+  }
+
+  &__color-palazzobrown{
+    background-color: #a48e83;
+  }
+
+  &__color-palazzoblack{
+    background-color: black;
+  }
+
+  &__color-shirtwhite{
+    background-color: rgb(252, 252, 252);
+  }
+
+  &__color-shirtblue{
+    background-color: #86acf7;
+  }
+
+  &__color-t-shirtwhite{
+    background-color: #ffffff;
+  }
+
+  &__color-t-shirtblue{
+    background-color: #86acf7;
+  }
+
+  &__color-t-shirtbrown{
+    background-color: rgb(219 197 181);
+  }
+
+  &__color-t-shirtblack{
+    background-color: #000000;
+  }
+
+  &__link{
+    width: 20px;
+    height: 20px;
+  }
+
+  &__size-list{
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+  }
+
+  &__size-biglist{
+    display: flex;
+    gap: 5px;
+  }
+
+  &__size-item{
+    font-size: 15px;
+    margin: 5px;
+    background-color: #ded5d570;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  &__button{
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 40px;
+    border: 1px black solid;
+    width: 100%;
+    background-color: white;
+  }
+}
