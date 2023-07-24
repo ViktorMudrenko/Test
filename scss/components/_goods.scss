@@ -3,6 +3,8 @@
 
   &__list {
     display: flex;
+    gap: 1px;
+    margin: 1px 0;
   }
 
   &__item-3{
@@ -11,7 +13,6 @@
 
   &__item{
     position: relative;
-    border: 1px white solid;
   }
 
   &__link{

@@ -1,15 +1,13 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin: 15px 0;
 
   @include for-tablet {
-    margin-bottom: 30px;
     justify-content: center;
   }
 
   @include for-desktop {
-    margin-bottom: 50px;
     justify-content: center;
   }
 
