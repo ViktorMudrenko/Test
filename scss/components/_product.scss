@@ -1,53 +1,100 @@
 .product {
   display: flex;
   position: relative;
+  flex-direction: column;
 
-  &__foto{
-    width: 65%;
+  @include for-tablet {
+    flex-direction: row;
   }
 
-  &__info{
-    width: 25%;
-    margin: 0  auto;
+  @include for-desktop {
+    flex-direction: row;
   }
 
-  &__card{
-    position: sticky;
-    transform: translate(0, -50%);
-    top: 50%;
+  &__foto {
+    width: 100%;
+
+    @include for-tablet {
+      width: 65%;
+    }
+
+    @include for-desktop {
+      width: 65%;
+    }
   }
 
-  &__name{
+  &__info {
+    margin: 0 40px;
+
+    @include for-tablet {
+      width: 25%;
+      margin: 0 auto;
+    }
+
+    @include for-desktop {
+      margin: 0 auto;
+    }
+  }
+
+  &__card {
+    text-align: center;
+    // position: sticky;
+    // transform: translate(0, -50%);
+    // top: 50%;
+
+    @include for-tablet {
+      position: sticky;
+      transform: translate(0, -50%);
+      top: 50%;
+    }
+
+    @include for-desktop {
+      position: sticky;
+      transform: translate(0, -50%);
+      top: 50%;
+    }
+  }
+
+  &__name {
     font-weight: lighter;
     font-size: 36px;
     margin-bottom: 40px;
   }
 
-  &__price{
+  &__price {
     margin-bottom: 40px;
   }
 
-    &__price-portfolio{
+  &__price-portfolio {
     margin-bottom: 10px;
     text-align: center;
     font-size: 16px;
   }
 
-  &__color-list{
+  &__color-list {
     display: flex;
     gap: 20px;
     padding-bottom: 40px;
     border-bottom: 0.5px black solid;
+    justify-content: center;
+
+    @include for-tablet {
+      justify-content: flex-start;
+    }
+
+    @include for-desktop {
+      justify-content: flex-start;
+    }
   }
 
-  &__color-palitra{
+  &__color-palitra {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding-bottom: 10px;
   }
 
-  &__color{
+  &__color {
     border: 1px rgb(184, 184, 184) solid;
     width: 20px;
     height: 20px;
@@ -55,7 +102,7 @@
     border-radius: 250px;
   }
 
-    &__color-portfolio{
+  &__color-portfolio {
     border: 1px rgb(184, 184, 184) solid;
     width: 10px;
     height: 10px;
@@ -63,59 +110,77 @@
     border-radius: 250px;
   }
 
-  &__color-palazzogray{
+  &__color-palazzogray {
     background-color: rgb(187 187 187);
   }
 
-  &__color-palazzobrown{
+  &__color-palazzobrown {
     background-color: #a48e83;
   }
 
-  &__color-palazzoblack{
+  &__color-palazzoblack {
     background-color: black;
   }
 
-  &__color-shirtwhite{
+  &__color-shirtwhite {
     background-color: rgb(252, 252, 252);
   }
 
-  &__color-shirtblue{
+  &__color-shirtblue {
     background-color: #86acf7;
   }
 
-  &__color-t-shirtwhite{
+  &__color-t-shirtwhite {
     background-color: #ffffff;
   }
 
-  &__color-t-shirtblue{
+  &__color-t-shirtblue {
     background-color: #86acf7;
   }
 
-  &__color-t-shirtbrown{
+  &__color-t-shirtbrown {
     background-color: rgb(219 197 181);
   }
 
-  &__color-t-shirtblack{
+  &__color-t-shirtblack {
     background-color: #000000;
   }
 
-  &__link{
+  &__link {
     width: 20px;
     height: 20px;
   }
 
-  &__size-list{
+  &__size-list {
     display: flex;
     gap: 5px;
     margin-top: 40px;
+    justify-content: center;
+
+    @include for-tablet {
+      justify-content: flex-start;
+    }
+
+    @include for-desktop {
+      justify-content: flex-start;
+    }
   }
 
-  &__size-biglist{
+  &__size-biglist {
     display: flex;
     gap: 5px;
+    justify-content: center;
+
+    @include for-tablet {
+      justify-content: flex-start;
+    }
+
+    @include for-desktop {
+      justify-content: flex-start;
+    }
   }
 
-  &__size-item{
+  &__size-item {
     font-size: 15px;
     margin: 5px;
     background-color: #ded5d570;
@@ -123,12 +188,21 @@
     border-radius: 5px;
   }
 
-  &__button{
+  &__button {
     font-size: 16px;
     padding: 20px;
     margin-top: 40px;
     border: 1px black solid;
     width: 100%;
     background-color: white;
+    margin-bottom: 20px;
+
+    @include for-tablet {
+      margin-bottom: 0;
+    }
+
+    @include for-desktop {
+      margin-bottom: 0;
+    }
   }
 }

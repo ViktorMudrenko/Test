@@ -132,12 +132,17 @@
           <div class="product__info">
             <div class="product__card">
               <h2 class="product__name">Палаццо чорні</h2>
-              <p class="product__price">1 399 ₴</p>
+              <div class="product__price"><span class="product__price-number"> <p class="product__price">1 399</p></span> ₴</div>
+
               <ul class="product__color-list">
                 <li class="product__color product__color-palazzogray"><a class="product__link" href="./palazzogray.html"></a></li>
                 <li class="product__color product__color-palazzobrown"><a class="product__link" href="./palazzobrown.html"></a></li>
                 <li class="product__color product__color-palazzoblack"><a class="product__link" href="./palazzoblack.html"></a></li>
               </ul>
+                  <div class="product__size"> 
+                    <div class="product__size-element" data-sb-curent-price="95450" data-sb-curent-size="38" data-sb-curent-id-or-vendor-code="038">38 мм</div>
+                    <div class="product__size-element" data-sb-curent-price="105450" data-sb-curent-size="42" data-sb-curent-id-or-vendor-code="042">42 мм</div>                   
+                  </div>
               <ul class="product__size-list">
                 <li class="product__size-item">XS</li>
                 <li class="product__size-item">S</li>
@@ -303,15 +308,15 @@
     <script>
       $(function () {
         $('.smart-basket__wrapper').smbasket({
-          productElement: 'team__item',
-          buttonAddToBasket: 'pokupka',
+          productElement: 'product',
+          buttonAddToBasket: 'product__button',
           productPrice: 'product__price-number',
           productSize: 'product__size-element',
 
           productQuantityWrapper: 'product__quantity',
           smartBasketMinArea: 'bascet',
-          countryCode: '+7',
-          smartBasketCurrency: '₽',
+          countryCode: '+3',
+          smartBasketCurrency: '₴',
           smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
 
           agreement: {

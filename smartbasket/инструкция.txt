@@ -71,7 +71,6 @@
             
 </div>
 
-
 Далее цену нужно обернуть в код 	
 <div class="product__price"><span class="product__price-number">320</span> ₽</div>
 
