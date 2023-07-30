@@ -1,25 +1,28 @@
 .pants {
-
-  &__list{
+  &__list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  &__item{
-    max-width: 33.33%;
+  &__item {
+    max-width: 50%;
     border: 1px white solid;
+
+    @include for-tablet {
+      max-width: 33.33%;
+    }
+
+    @include for-desktop {
+      max-width: 25%;
+    }
   }
 
-  &__link{
+  &__link {
     color: black;
     font-size: 24px;
   }
 
-  // &__img{
-
-  // }
-
-  &__text{
+  &__text {
     text-align: center;
     margin: 10px;
   }

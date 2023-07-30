@@ -1,6 +1,12 @@
 .social {
+  margin-bottom: 20px;
+
+  @include for-tablet {
+    margin-bottom: 0;
+  }
+
   @include for-desktop {
-    margin-left: 70px;
+    margin-bottom: 0;
   }
 
   &__text {
@@ -11,6 +17,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-text-light);
+    @include for-tablet {
+      text-align: start;
+    }
 
     @include for-desktop {
       text-align: start;

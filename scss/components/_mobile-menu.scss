@@ -9,7 +9,7 @@
   padding: 48px 40px;
   z-index: 1;
   background-color: var(--color-text-light);
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: transform var(--time-trasform);
 
   &.is-open {

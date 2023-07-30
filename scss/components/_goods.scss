@@ -3,19 +3,40 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 1px;
     margin: 1px 0;
+
+    @include for-tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 1px;
+      margin: 1px 0;
+    }
+
+    @include for-desktop {
+      flex-direction: row;
+      display: flex;
+      gap: 1px;
+      margin: 1px 0;
+    }
   }
 
-  &__item-3{
-    width: 33.33%;
+  &__item-3 {
+    @include for-tablet {
+      width: 33.33%;
+    }
+
+    @include for-desktop {
+      width: 33.33%;
+    }
   }
 
-  &__item{
+  &__item {
     position: relative;
   }
 
-  &__link{
+  &__link {
     text-decoration: none;
     color: #ffffff;
   }
@@ -24,9 +45,7 @@
     object-fit: cover;
   }
 
-
-
-  &__name{
+  &__name {
     padding: 10px;
     font-weight: lighter;
     font-size: 20px;

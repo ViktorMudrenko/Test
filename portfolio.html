@@ -20,12 +20,12 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="logo" href="./index.html"><span class="logo--accent">Free</span>dom</a>
         <button class="header__burger-menu js-open-menu">
           <svg class="header__icon-menu" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+        <a class="logo" href="./index.html"><span class="logo--accent">FREE</span>DOM</a>
         <div class="mobile-menu js-menu-container">
           <button class="mobile-menu__close-button js-close-menu">
             <svg class="close-button__icon" width="40" height="40">
@@ -40,7 +40,7 @@
                 >
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link--current" href="./portfolio.html">Каталог</a>
+                <a class="mobile-menu__link" href="./portfolio.html">Каталог</a>
               </li>
               <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="#">Контакти</a>
@@ -61,26 +61,38 @@
           </ul>
           <ul class="mobile-menu__social">
             <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="#">Instagram </a>
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.instagram.com/freedomwear.ua/"
+                target="_blank"
+                >Instagram
+              </a>
             </li>
             <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="#">Twitter </a>
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.tiktok.com/@freedomwearua"
+                target="_blank"
+                >TikTok
+              </a>
             </li>
             <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="#">Facebook </a>
-            </li>
-            <li class="mobile-menu__social-item">
-              <a class="mobile-menu__social-link" href="#">Linkedin </a>
+              <a
+                class="mobile-menu__social-link"
+                href="https://www.facebook.com/freedomwear.ua"
+                target="_blank"
+                >Facebook
+              </a>
             </li>
           </ul>
         </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="./index.html">Головна</a>
+              <a class="navigation__link navigation__link--current" href="./index.html">Головна</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="./portfolio.html">Каталог</a>
+              <a class="navigation__link" href="./portfolio.html">Каталог</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Контакти</a>
@@ -104,17 +116,8 @@
               +38 (093) 855 25 65
             </a>
           </li>
-          <li class="contacts__item">
-            <a class="bascet contacts__link" href="#">
-              <svg class="contacts__icon contacts__icon--phone">
-                <use href="./images/icons.svg#bascet"></use>
-              </svg>
-            </a>
-          </li>
         </ul>
-      </div>
-      <div>
-        <a href=""></a>
+        <div><a class="bascet contacts__link" href="#"> </a></div>
       </div>
     </header>
 
@@ -127,7 +130,7 @@
               <a class="filter__button" href="./portfolio.html">Весь одяг</a>
             </li>
             <li class="filter__item">
-              <a class="filter__button"  href="./pants.html">Штани</a>
+              <a class="filter__button" href="./pants.html">Штани</a>
             </li>
             <li class="filter__item">
               <a class="filter__button" href="./shirt.html">Сорочки</a>
@@ -139,260 +142,381 @@
               <a class="filter__button" href="./top.html">Топи</a>
             </li>
             <li class="filter__item">
-              <a class="filter__button"  href="./accessories.html">Аксесуари</a>
+              <a class="filter__button" href="./accessories.html">Аксесуари</a>
             </li>
           </ul>
           <ul class="pants__list">
             <li class="pants__item">
               <a class="pants__link" href="./palazzoblack.html">
-                <img class="pants__img" src="./images/palazzoblack.jpg" alt="palazzoblack">
+                <img class="pants__img" src="./images/palazzoblack.jpg" alt="palazzoblack" />
                 <p class="pants__text">Палаццо чорні</p>
                 <p class="product__price-portfolio">1 399 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-palazzogray"><a class="product__link" href="./palazzogray.html"></a></li>
-                  <li class="product__color-portfolio product__color-palazzobrown"><a class="product__link" href="./palazzobrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-palazzoblack"><a class="product__link" href="./palazzoblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-palazzogray">
+                    <a class="product__link" href="./palazzogray.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-palazzobrown">
+                    <a class="product__link" href="./palazzobrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-palazzoblack">
+                    <a class="product__link" href="./palazzoblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./palazzogray.html">
-                <img class="pants__img" src="./images/palazzogray.jpg" alt="palazzogray">
-                <p class="pants__text">Палаццо  сірі</p>
+              <a class="pants__link" href="./palazzogray.html">
+                <img class="pants__img" src="./images/palazzogray.jpg" alt="palazzogray" />
+                <p class="pants__text">Палаццо сірі</p>
                 <p class="product__price-portfolio">1 399 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-palazzogray"><a class="product__link" href="./palazzogray.html"></a></li>
-                  <li class="product__color-portfolio product__color-palazzobrown"><a class="product__link" href="./palazzobrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-palazzoblack"><a class="product__link" href="./palazzoblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-palazzogray">
+                    <a class="product__link" href="./palazzogray.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-palazzobrown">
+                    <a class="product__link" href="./palazzobrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-palazzoblack">
+                    <a class="product__link" href="./palazzoblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
               <a class="pants__link" href="./palazzobrown.html">
-                <img class="pants__img" src="./images/palazzobrown.jpg" alt="palazzobrown">
+                <img class="pants__img" src="./images/palazzobrown.jpg" alt="palazzobrown" />
                 <p class="pants__text">Палаццо бежеві</p>
                 <p class="product__price-portfolio">1 399 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-palazzogray"><a class="product__link" href="./palazzogray.html"></a></li>
-                  <li class="product__color-portfolio product__color-palazzobrown"><a class="product__link" href="./palazzobrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-palazzoblack"><a class="product__link" href="./palazzoblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-palazzogray">
+                    <a class="product__link" href="./palazzogray.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-palazzobrown">
+                    <a class="product__link" href="./palazzobrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-palazzoblack">
+                    <a class="product__link" href="./palazzoblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
               <a class="pants__link" href="./shirtwhite.html">
-                <img class="pants__img" src="./images/shirtwhite.JPG" alt="palazzoblack">
+                <img class="pants__img" src="./images/shirtwhite.JPG" alt="palazzoblack" />
                 <p class="pants__text">Сорочка молочна</p>
                 <p class="product__price-portfolio">1 299 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-shirtwhite"><a class="product__link" href="./shirtwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-shirtblue"><a class="product__link" href="./shirtblue.html"></a></li>
+                  <li class="product__color-portfolio product__color-shirtwhite">
+                    <a class="product__link" href="./shirtwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-shirtblue">
+                    <a class="product__link" href="./shirtblue.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./shirtblue.html">
-                <img class="pants__img" src="./images/shirtblue.jpg" alt="palazzogray">
+              <a class="pants__link" href="./shirtblue.html">
+                <img class="pants__img" src="./images/shirtblue.jpg" alt="palazzogray" />
                 <p class="pants__text">Сорочка блакитна</p>
                 <p class="product__price-portfolio">1 299 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-shirtwhite"><a class="product__link" href="./shirtwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-shirtblue"><a class="product__link" href="./shirtblue.html"></a></li>
+                  <li class="product__color-portfolio product__color-shirtwhite">
+                    <a class="product__link" href="./shirtwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-shirtblue">
+                    <a class="product__link" href="./shirtblue.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
               <a class="pants__link" href="./t-shirtwhite.html">
-                <img class="pants__img" src="./images/t-shirtwhite.jpg" alt="t-shirtwhite">
+                <img class="pants__img" src="./images/t-shirtwhite.jpg" alt="t-shirtwhite" />
                 <p class="pants__text">Футболка біла</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./t-shirtwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./t-shirtblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./t-shirtbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./t-shirtblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./t-shirtwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./t-shirtblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./t-shirtbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./t-shirtblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./t-shirtbrown.html">
-                <img class="pants__img" src="./images/t-shirtbrown.jpg" alt="t-shirtbrown">
+              <a class="pants__link" href="./t-shirtbrown.html">
+                <img class="pants__img" src="./images/t-shirtbrown.jpg" alt="t-shirtbrown" />
                 <p class="pants__text">Футболка бежева</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./t-shirtwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./t-shirtblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./t-shirtbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./t-shirtblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./t-shirtwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./t-shirtblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./t-shirtbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./t-shirtblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./t-shirtblue.html">
-                <img class="pants__img" src="./images/t-shirtblue.jpg" alt="t-shirtblue">
+              <a class="pants__link" href="./t-shirtblue.html">
+                <img class="pants__img" src="./images/t-shirtblue.jpg" alt="t-shirtblue" />
                 <p class="pants__text">Футболка блакитна</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./t-shirtwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./t-shirtblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./t-shirtbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./t-shirtblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./t-shirtwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./t-shirtblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./t-shirtbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./t-shirtblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./t-shirtblack.html">
-                <img class="pants__img" src="./images/t-shirtblack.jpg" alt="t-shirtblack">
+              <a class="pants__link" href="./t-shirtblack.html">
+                <img class="pants__img" src="./images/t-shirtblack.jpg" alt="t-shirtblack" />
                 <p class="pants__text">Футболка чорна</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./t-shirtwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./t-shirtblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./t-shirtbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./t-shirtblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./t-shirtwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./t-shirtblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./t-shirtbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./t-shirtblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
               <a class="pants__link" href="./topwhite.html">
-                <img class="pants__img" src="./images/topwhite.jpg" alt="palazzoblack">
+                <img class="pants__img" src="./images/topwhite.jpg" alt="palazzoblack" />
                 <p class="pants__text">Топ майка біла</p>
                 <p class="product__price-portfolio">629 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./topbrown.html">
-                <img class="pants__img" src="./images/topbrown.jpg" alt="palazzogray">
+              <a class="pants__link" href="./topbrown.html">
+                <img class="pants__img" src="./images/topbrown.jpg" alt="palazzogray" />
                 <p class="pants__text">Топ майка бежева</p>
                 <p class="product__price-portfolio">629 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./topblue.html">
-                <img class="pants__img" src="./images/topblue.jpg" alt="palazzogray">
+              <a class="pants__link" href="./topblue.html">
+                <img class="pants__img" src="./images/topblue.jpg" alt="palazzogray" />
                 <p class="pants__text">Топ майка блакитна</p>
                 <p class="product__price-portfolio">629 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./topblack.html">
-                <img class="pants__img" src="./images/topblack.jpg" alt="palazzogray">
+              <a class="pants__link" href="./topblack.html">
+                <img class="pants__img" src="./images/topblack.jpg" alt="palazzogray" />
                 <p class="pants__text">Топ майка чорна</p>
                 <p class="product__price-portfolio">629 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
               <a class="pants__link" href="./topboxerwhite.html">
-                <img class="pants__img" src="./images/topboxerwhite.jpg" alt="palazzoblack">
+                <img class="pants__img" src="./images/topboxerwhite.jpg" alt="palazzoblack" />
                 <p class="pants__text">Топ боксерка біла</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topboxerwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topboxerblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topboxerbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topboxerblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topboxerwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topboxerblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topboxerbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topboxerblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./topboxerbrown.html">
-                <img class="pants__img" src="./images/topboxerbrown.jpg" alt="palazzogray">
+              <a class="pants__link" href="./topboxerbrown.html">
+                <img class="pants__img" src="./images/topboxerbrown.jpg" alt="palazzogray" />
                 <p class="pants__text">Топ боксерка бежева</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topboxerwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topboxerblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topboxerbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topboxerblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topboxerwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topboxerblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topboxerbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topboxerblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./topboxerblue.html">
-                <img class="pants__img" src="./images/topboxerblue.jpg" alt="palazzogray">
+              <a class="pants__link" href="./topboxerblue.html">
+                <img class="pants__img" src="./images/topboxerblue.jpg" alt="palazzogray" />
                 <p class="pants__text">Топ боксерка блакитна</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topboxerwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topboxerblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topboxerbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topboxerblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topboxerwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topboxerblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topboxerbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topboxerblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
             <li class="pants__item">
-              <a class="pants__link"  href="./topboxerblack.html">
-                <img class="pants__img" src="./images/topboxerblack.jpg" alt="palazzogray">
+              <a class="pants__link" href="./topboxerblack.html">
+                <img class="pants__img" src="./images/topboxerblack.jpg" alt="palazzogray" />
                 <p class="pants__text">Топ боксерка чорна</p>
                 <p class="product__price-portfolio">599 ₴</p>
               </a>
               <div>
                 <ul class="product__color-palitra">
-                  <li class="product__color-portfolio product__color-t-shirtwhite"><a class="product__link" href="./topboxerwhite.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblue"><a class="product__link" href="./topboxerblue.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtbrown"><a class="product__link" href="./topboxerbrown.html"></a></li>
-                  <li class="product__color-portfolio product__color-t-shirtblack"><a class="product__link" href="./topboxerblack.html"></a></li>
+                  <li class="product__color-portfolio product__color-t-shirtwhite">
+                    <a class="product__link" href="./topboxerwhite.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblue">
+                    <a class="product__link" href="./topboxerblue.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtbrown">
+                    <a class="product__link" href="./topboxerbrown.html"></a>
+                  </li>
+                  <li class="product__color-portfolio product__color-t-shirtblack">
+                    <a class="product__link" href="./topboxerblack.html"></a>
+                  </li>
                 </ul>
               </div>
             </li>
           </ul>
-
         </div>
       </section>
     </main>
@@ -400,83 +524,68 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__connection">
-          <div class="footer__address">
-            <a class="logo logo--footer" href="./index.html"
-              ><span class="logo--accent">FREE</span>DOM</a
-            >
-            <address class="address">
-              <ul class="address__list">
-                <li class="address__item">
-                  <a
-                    class="address__link"
-                    href="https://goo.gl/maps/ugNVqVzA1ZjysugSA"
-                    target="_blank"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a class="address__contacts" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a class="address__contacts" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </address>
-          </div>
+          <a class="logo logo--footer" href="./index.html">
+            <span class="logo--accent">FREE</span>DOM
+          </a>
           <div class="social">
             <p class="social__text">приєднуйтесь</p>
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="#">
+                <a
+                  class="social__link"
+                  href="https://www.instagram.com/freedomwear.ua/"
+                  target="_blank"
+                >
                   <svg class="social__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">
+                <a
+                  class="social__link"
+                  href="https://www.tiktok.com/@freedomwearua"
+                  target="_blank"
+                >
                   <svg class="social__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
+                    <use href="./images/icons.svg#icon-tiktok"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#">
+                <a
+                  class="social__link"
+                  href="https://www.facebook.com/freedomwear.ua"
+                  target="_blank"
+                >
                   <svg class="social__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <svg class="social__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
             </ul>
           </div>
-        </div>
-        <div class="mail-send">
-          <p class="mail-send__text">Підпишіться на розсилку</p>
-          <form class="mail-send__form">
-            <label for="mail-send"></label>
-            <input
-              id="mail-send"
-              class="mail-send__input"
-              type="email"
-              name="mail-send"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="mail-send__button">
-              Підписатися
-              <svg class="send-icon-footer" width="20" height="20">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link"
+                  href="https://goo.gl/maps/ugNVqVzA1ZjysugSA"
+                  target="_blank"
+                  >м. Київ</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts" href="mailto:freedomwear.ua@gmail.com"
+                  >freedomwear.ua@gmail.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contacts" href="tel:+380938552565">+38 (093) 855 25 65</a>
+              </li>
+            </ul>
+          </address>
+          <a class="privacy__link" href="./privacy.html">Політика конфіденційності</a>
         </div>
       </div>
     </footer>

@@ -1,11 +1,12 @@
-.mobile-menu {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.size-menu {
+  display: none;
+  // position: absolute;
+  // display: flex;
+  // flex-direction: column;
+  // top: 0;
+  // left: 0;
+
   padding: 48px 40px;
   z-index: 1;
   background-color: var(--color-text-light);
@@ -13,16 +14,26 @@
   transition: transform var(--time-trasform);
 
   &.is-open {
+    position: absolute;
+    display: flex;
     transform: translateX(0);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
 
+  &__null{
+    height: 100%;
+    width: 65%;
+  }
   &__close-button {
     position: absolute;
     display: flex;
     border: none;
     padding: 0;
-    top: 10px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
     background-color: var(--color-text-light);
     transition: color var(--time-trasform) var(--timing-function);
@@ -106,4 +117,21 @@
     letter-spacing: 0.02em;
     color: var(--color-brand);
   }
+
+  &_table-hero{
+    font-size: 14px;
+  }
+
+  &__table-name{
+    text-align: left;
+    padding:  20px;
+    border-right: 1px black solid;
+  }
+
+  &__table{
+    font-size: small;
+    border-spacing: 0;
+  }
+
+
 }
